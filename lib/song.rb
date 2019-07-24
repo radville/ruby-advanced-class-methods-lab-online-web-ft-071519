@@ -34,9 +34,10 @@ class Song
     @@all.each do |song|
       if song.name == song_name
         binding.pry
-        song
+        matching = song
       end
     end
+    matching
   end
 
 end
