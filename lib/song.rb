@@ -1,3 +1,5 @@
+require "pry"
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -13,6 +15,7 @@ class Song
   def self.create
     @@all << self.new
     return self
+    binding.pry
   end
 
 end
