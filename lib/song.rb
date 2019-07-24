@@ -56,6 +56,7 @@ class Song
     name = filename.split(" - ")[1].chomp(".mp3")
     new_song = new_by_name(name)
     new_song.artist_name = filename.split(" - ")[0]
+    new_song
   end
 
 end
