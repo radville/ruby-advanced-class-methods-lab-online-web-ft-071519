@@ -35,8 +35,8 @@ class Song
     @@all.each do |song|
       if song.name == song_name
         matching = song
-      else
-        matching = nil
+      # else
+      #   matching
       end
     end
     matching
