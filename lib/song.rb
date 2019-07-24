@@ -61,7 +61,7 @@ class Song
   
   def self.create_from_filename(filename)
     song = self.new_from_filename(filename)
-    song.create_by_name(filename)
+    song.create_by_name(song.name)
     # binding.pry
   end
 
